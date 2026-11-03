@@ -132,9 +132,11 @@ adb shell am start -n com.example.fatfish/.MainActivity
 
 本仓库**不提交 APK**，所有安装包通过 **GitHub Releases** 分发：
 
-- 最新手表端：`FatFishWatch_v15.apk`
-- 手机配置端：`FatFishPhone_v1.apk`
-- 历史版本（v3～v14）已永久留档，完整清单见 [docs/releases.md](docs/releases.md) 与 [CHANGELOG.md](CHANGELOG.md)。
+- 📱 **最新手表端**：[FatFishWatch_v15.apk](https://github.com/2651984843-svg/FatFish/releases/download/v15/FatFishWatch_v15.apk)（约 116 MB）
+- 📲 **手机配置端**：[FatFishPhone_v1.apk](https://github.com/2651984843-svg/FatFish/releases/download/v15/FatFishPhone_v1.apk)（约 3.4 MB）
+
+👉 全部版本见 [Releases 页面](https://github.com/2651984843-svg/FatFish/releases)。
+
 
 上传方式见 [docs/releases.md](docs/releases.md#上传指引)。
 
