@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">大肥鱼</string>
+    <string name="hold_to_talk">按住说话</string>
+    <string name="release_to_send">松开发送</string>
+    <string name="settings_title">设置</string>
+    <string name="back">← 返回</string>
+    <string name="remote_fetch_desc">远程拉取配置：手机端「大肥鱼配置推送」填好配置并开启同步服务后，这里输入手机端地址一键拉取覆盖，省去小屏打字。</string>
+    <string name="fetch_remote">远程拉取配置</string>
+    <string name="api_base_desc">API 地址：留空用官方默认；可填任意中转站 / 自部署服务，只填基础地址会自动补全。</string>
+    <string name="api_base_hint">https://api.deepseek.com/chat/completions</string>
+    <string name="protocol_desc">API 协议：DeepSeek 官方和大多数中转站选 OpenAI 兼容；接 Claude 选 Anthropic。</string>
+    <string name="api_key_desc">API 密钥：填入后即可真正聊天；留空则使用离线演示模式。</string>
+    <string name="api_key_hint">粘贴 API 密钥</string>
+    <string name="model_desc">模型：可手动输入，或点下方按钮从服务端拉取列表点选。</string>
+    <string name="model_hint">deepseek-chat</string>
+    <string name="fetch_models">获取可用模型</string>
+    <string name="city_desc">默认城市：问天气时用；留空的话问天气请带城市名（如“北京天气”）。</string>
+    <string name="city_hint">例如：北京</string>
+    <string name="input_mode_desc">输入方式：语音 = 按住人物说话；键盘 = 底部打字发消息。适合不方便开口的场景。</string>
+    <string name="input_mode_voice">语音输入（按住人物说话）</string>
+    <string name="input_mode_keyboard">键盘文字输入</string>
+    <string name="input_hint">想说什么，打字发给大肥鱼…</string>
+    <string name="send">发送</string>
+    <string name="persona_desc">人格：6 套性格任选，每个人格是独立对话、独立记忆，切换即切换角色。</string>
+    <string name="persona_title">选择人格</string>
+    <string name="persona_clear">清空当前人格的记忆</string>
+    <string name="persona_cleared">已清空当前人格记忆</string>
+    <string name="persona_clear_confirm">清空后这个人格会忘记和你的所有对话，确定吗？</string>
+    <string name="auto_rotate_desc">随重力方向旋转：开启后手表横竖屏自动切换，关闭则固定竖屏。</string>
+    <string name="auto_rotate_label">随重力方向旋转</string>
+    <string name="fish_size_desc">大肥鱼大小：不同屏幕比例不同，调节可避免遮挡。</string>
+    <string name="fish_size_entry_value">大肥鱼大小（当前 %1$d%%）</string>
+    <string name="fish_size_overlay_title">调节大肥鱼大小</string>
+    <string name="fish_size_percent">%1$d%%</string>
+    <string name="fish_size_hint">拖动下方滑块实时预览</string>
+    <string name="fish_size_done">完成</string>
+    <string name="save">保存</string>
+    <string name="saved">已保存</string>
+    <string name="settings_gear">⚙</string>
+</resources>

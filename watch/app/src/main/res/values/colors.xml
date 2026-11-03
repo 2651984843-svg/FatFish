@@ -1,0 +1,9 @@
+<resources>
+    <color name="water_deep">#0A1A2F</color>
+    <color name="water_mid">#0B2447</color>
+    <color name="fish_orange">#FF8A3D</color>
+    <color name="fish_belly">#FFD9A0</color>
+    <color name="button_bg">#1E3A5F</color>
+    <color name="button_stroke">#3B82F6</color>
+    <color name="white">#FFFFFF</color>
+</resources>

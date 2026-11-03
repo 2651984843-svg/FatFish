@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/water_deep">
+
+    <!-- 大肥鱼：占满全屏的动画视图 -->
+    <com.example.fatfish.FishView
+        android:id="@+id/fishView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 顶部状态提示 -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="大肥鱼在游来游去"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <!-- 漂浮气泡：显示大肥鱼的文字回答 -->
+    <TextView
+        android:id="@+id/replyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:maxHeight="200dp"
+        android:background="@drawable/bubble_bg"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="4dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+    <!-- 右上角设置入口 -->
+    <TextView
+        android:id="@+id/settingsButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/settings_gear"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <!-- 键盘输入栏（选择键盘输入方式时显示） -->
+    <LinearLayout
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="12dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/inputEdit"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/button_bg"
+            android:hint="@string/input_hint"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLines="2"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="#88FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_talk_button"
+            android:gravity="center"
+            android:minWidth="64dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

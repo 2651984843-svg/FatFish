@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">大肥鱼配置推送</string>
+    <string name="title">大肥鱼配置推送</string>
+    <string name="subtitle">在手机上填好下面配置，打开「同步服务」，让手表拉取即可，不用在小屏上打字。</string>
+    <string name="api_base_label">API 地址</string>
+    <string name="api_base_hint">https://api.deepseek.com/chat/completions</string>
+    <string name="protocol_label">API 协议</string>
+    <string name="model_label">模型</string>
+    <string name="model_hint">deepseek-chat</string>
+    <string name="key_label">API 密钥</string>
+    <string name="key_hint">粘贴 API 密钥</string>
+    <string name="city_label">默认城市（问天气用，可留空）</string>
+    <string name="city_hint">例如：北京</string>
+    <string name="sync_label">同步服务</string>
+    <string name="address_hint">服务未开启</string>
+    <string name="address_value">手表拉取地址：%1$s</string>
+    <string name="status_off">同步服务已关闭</string>
+    <string name="status_on">服务运行中，手表连同一 WiFi 后输入上方地址拉取配置</string>
+    <string name="usage_title">手表端怎么用</string>
+    <string name="usage_body">1. 手表打开「大肥鱼」→ 右上角 ⚙ 进入设置\n2. 点「远程拉取配置」\n3. 输入上方地址（例如 http://192.168.1.5:8765）\n4. 点「拉取」，配置一键覆盖并保存</string>
+</resources>

@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.example.fatfish'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.fatfish"
+        minSdk 26            // Android 8.0，覆盖 OPPO Watch 1 代及之后
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        // 只打包手表的 ARM 架构，减小 APK 体积；
+        // 如需在 x86 模拟器上调试，取消下面三行的注释
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi-v7a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    // 说明：sherpa-onnx 的 Kotlin 绑定层（com.k2fsa.sherpa.onnx）已作为源码放进
+    // app/src/main/java/com/k2fsa/sherpa/onnx/，JNI 库(.so)放在 app/src/main/jniLibs/，
+    // 因此这里不再需要（也没有）Maven 依赖。
+}
